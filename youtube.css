@@ -1,0 +1,286 @@
+*,
+*::before,
+* ::after {
+    font-family: 'Roboto', aerial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', aerial, sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+}
+
+menu {
+    position: fixed;
+    margin-top: 4em;
+}
+
+.headercontainer {
+    background: white;
+    display: flex;
+    margin-top: 0.5em;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    height: 3em;
+    font-family: 'Roboto', aerial, sans-serif;
+    z-index: 1111111111111111111111111;
+}
+
+input {
+    border: 2px solid hsla(0, 0%, 53.3%, 0.2);
+    width: 100%;
+    height: 90%;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5em;
+    color: hsl(0, 0%, 6.7%);
+    font-size: 1em;
+}
+
+input:focus {
+    border: 0.5px solid rgba(21, 255, 0, 0.568) !important;
+    box-shadow: inset 0 1px 0.2em rgba(0, 183, 255, 0.568);
+}
+
+.div1 {
+    width: 4.5em;
+    display: flex;
+    font-size: 3em;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.div2 {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* border: 2px solid red !important; */
+    height: 3em;
+    cursor: pointer;
+}
+
+.div3 {
+    display: flex;
+    width: 12%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+menu {
+    height: 80vh;
+    width: 10vh;
+}
+
+.menu-items {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.image {
+    position: relative;
+    margin-left: -1em;
+    margin-top: 1.3em;
+    cursor: pointer;
+}
+
+span {
+    font-size: 0.8em;
+    padding-top: 0.5em;
+}
+
+#i1 {
+    margin-left: -1.2em;
+}
+
+.category {
+    position: fixed;
+    display: flex;
+    width: 93%;
+    margin: 3em 7em;
+    float: right;
+    border-bottom: 2px solid #11111111!important;
+}
+
+.category ul {
+    display: flex;
+}
+
+.category ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2em;
+    text-transform: capitalize;
+}
+
+.category ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    padding: 0.5em 1em 0.5em 1em;
+    border: 2px solid #11111111;
+    background-color: #11111111;
+    border-radius: 3in;
+}
+
+.category ul li a.active {
+    background: #000000 !important;
+    color: #fff !important;
+}
+
+.grid-container {
+    position: relative;
+    width: 93%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border-left: 2px solid #11111111;
+    column-gap: 1.3em !important;
+    row-gap: 2.5em !important;
+    align-content: center;
+    justify-content: center;
+    float: right;
+    top: 8em;
+    z-index: -10000;
+}
+
+.grid-item {
+    display: flex;
+    height: 17em;
+    width: 20em;
+    /* border: 2px solid blue; */
+    flex-direction: column;
+    z-index: -10000;
+}
+
+.grid-item .vdbackground {
+    justify-self: center;
+    height: 10em;
+    width: 19.7em;
+    cursor: pointer
+}
+
+.grid-item .channel-banner {
+    margin-top: 0.6em;
+    display: flex;
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.grid-item h3 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #030303;
+    padding-left: 0.8em;
+    padding-bottom: 1em;
+}
+
+#channeldesc {
+    display: flex;
+}
+
+.channeldesc {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    top: -1.4em;
+    left: 3.6em;
+    font-size: 1.3em;
+    Color: #030303;
+    line-height: 10px;
+}
+
+.channeldesc p {
+    font-size: 0.8em;
+    position: relative;
+    left: -1em;
+    cursor: pointer;
+}
+
+.channeldesc p+img {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    left: -13em;
+    top: 0.7em;
+    /* background-color: #444; */
+    border-radius: 3in;
+    cursor: pointer;
+}
+
+.views {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 0.9em;
+    top: -3.5em;
+    left: 3.8em;
+}
+
+.music {
+    position: relative;
+    left: -11em;
+    top: 0.8em;
+    cursor: pointer;
+}
+
+#check1 {
+    position: relative;
+    left: -8em;
+}
+
+#check2 {
+    position: relative;
+    left: -10.5em;
+}
+
+.music1 {
+    position: relative;
+    left: -12em;
+}
+
+#search_icon {
+    border: 2px solid #11111111;
+    height: 2.8em;
+    width: 3em;
+    position: relative;
+    top: -0.2em;
+}
+
+#search_icon:hover {
+    background: grey;
+}
+
+.time {
+    background-color: black;
+    color: white;
+    width: 3em;
+    position: relative;
+    top: -2.6em;
+    left: 16.5em;
+    text-align: center;
+}
